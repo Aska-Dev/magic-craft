@@ -1,0 +1,7 @@
+{
+    "config": {
+        "start_pool": "magic:ruined_church/ruined_church",
+        "size": 7
+    },
+    "type": "minecraft:village"
+}

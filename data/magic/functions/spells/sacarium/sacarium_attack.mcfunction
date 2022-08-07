@@ -1,0 +1,8 @@
+execute as @s[scores={mana=2..,sacariumTimer=0}] at @s run tp @e[tag=sacarium,sort=nearest,limit=1] ^ ^ ^6
+execute as @s[scores={mana=2..,sacariumTimer=0}] at @s anchored eyes facing entity @e[sort=nearest,limit=1,type=#magic:creatures,type=!#magic:undead,distance=..9] eyes anchored feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 if entity @s[distance=..0.5] run effect give @e[type=#magic:creatures,type=!#magic:undead,sort=nearest,limit=1] instant_damage 5 1 true
+execute as @s[scores={mana=2..,sacariumTimer=0}] at @s anchored eyes facing entity @e[sort=nearest,limit=1,type=#magic:undead,distance=..9] eyes anchored feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 if entity @s[distance=..0.5] run effect give @e[type=#magic:undead,sort=nearest,limit=1] instant_health 5 1 true
+execute as @s[scores={mana=2..,sacariumTimer=0}] at @s anchored eyes facing entity @e[sort=nearest,limit=1,type=#magic:creatures,distance=..9] eyes anchored feet positioned ^ ^ ^1 rotated as @s positioned ^ ^ ^-1 if entity @s[distance=..0.5] at @e[type=#magic:creatures,sort=nearest,limit=1] run particle minecraft:sweep_attack ~ ~0.6 ~ 0.2 0.2 0.2 1 2 force
+execute as @s[scores={mana=2..,sacariumTimer=0}] at @s[scores={mana=2..,sacariumTimer=0}] run playsound minecraft:item.trident.throw player @a
+execute as @s[scores={mana=2..,sacariumTimer=0}] run scoreboard players remove @s mana 2
+execute as @s[scores={sacariumTimer=0}] run scoreboard players set @s sacariumTimer 20
+scoreboard players set @s SpellUsed 0

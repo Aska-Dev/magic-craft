@@ -1,0 +1,27 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          [
+            {
+              "text": "Captured Soul: ",
+              "color": "blue",
+              "italic": false
+            },
+            {
+              "score": {
+                "name": "@s",
+                "objective": "Soulstone"
+              },
+              "color": "blue",
+              "italic": false
+            }
+          ]
+        ]
+      ],
+      "replace": true
+    }
+  ]
+  

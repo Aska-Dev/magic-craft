@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " c ",
+        "CWC",
+        "FCF"
+    ],
+    "key": {
+        "c": {
+            "item": "minecraft:copper_ingot"
+        },
+        "C": {
+            "item": "minecraft:chiseled_quartz_block"
+        },
+        "W": {
+            "item": "minecraft:water_bucket"
+        },
+        "F": {
+            "item": "minecraft:calcite"
+        }
+    },
+    "result": {
+        "item": "minecraft:knowledge_book",
+        "count": 1
+    }
+}

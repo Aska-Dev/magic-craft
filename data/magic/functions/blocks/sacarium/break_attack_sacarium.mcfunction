@@ -1,0 +1,1 @@
+kill @e[type=armor_stand,tag=sacarium,sort=nearest,limit=1]

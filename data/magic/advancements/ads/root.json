@@ -1,0 +1,18 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:nether_star"
+      },
+      "title": "A magical world",
+      "description": "Enter the world of magic",
+      "background": "minecraft:textures/gui/advancements/backgrounds/nether.png",
+      "show_toast": true,
+      "announce_to_chat": true
+    },
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:tick"
+      }
+    }
+  }
+  

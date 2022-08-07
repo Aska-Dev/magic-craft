@@ -1,0 +1,1 @@
+summon armor_stand ~ ~ ~ {NoGravity:1b,ShowArms:1b,Marker:1b,Invisible:1b,Tags:["sacarium"],Pose:{RightArm:[160f,180f,0f]},DisabledSlots:4144959,HandItems:[{id:"minecraft:netherite_sword",Count:1b,tag:{CustomModelData:1680018}},{}]}

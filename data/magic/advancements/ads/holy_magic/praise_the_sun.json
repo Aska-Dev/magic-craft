@@ -1,0 +1,36 @@
+{
+    "display": {
+        "title": {
+            "text": "Praise The Sun",
+            "color": "gold"
+        },
+        "description": {
+            "text": "Choose the side of the Light",
+            "color": "white"
+        },
+        "icon": {
+            "item": "minecraft:carrot_on_a_stick",
+            "nbt": "{CustomModelData:1680015}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "parent": "magic:ads/root",
+    "criteria": {
+      "HoldSign": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "minecraft:carrot_on_a_stick"
+              ],
+              "nbt": "{irivasign:1b}"
+            }
+          ]
+        }
+      }
+    }
+}

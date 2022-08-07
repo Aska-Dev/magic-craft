@@ -1,0 +1,3 @@
+kill @e[type=item,nbt={Item:{id:"minecraft:chiseled_deepslate"}}]
+summon item ~ ~ ~ {Item:{id:"minecraft:armor_stand",Count:1b,tag:{display:{Name:'{"text":"Necronomic Altar","color":"dark_purple","italic":false}',Lore:['{"text":"The book contains","color":"dark_gray"}','{"text":"the instructios for","color":"dark_gray"}','{"text":"a mysterious altar","color":"dark_gray"}']},CustomModelData:1680006,EntityTag:{Tags:["bloodaltar"]}}}}
+kill @s
