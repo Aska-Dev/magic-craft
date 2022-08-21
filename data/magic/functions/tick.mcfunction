@@ -14,7 +14,9 @@ execute as @a[scores={SpellUsed=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_
 execute as @a[tag=!bloodmage,tag=!shaman,scores={SpellUsed=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{irivasign:1b}}}] run function magic:spells/sign_of_iriva
 execute as @a[scores={SpellUsed=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{sacariumring:1b}}}] run function magic:spells/sacarium/sacarium_attack
 #Schamanisch
-execute as @a[scores={SpellUsed=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{chisel:1b}}}] run function magic:spells/rune_carve
+execute as @a[tag=shaman,tag=Speedrune,scores={SpellUsed=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{speedrune:1b}}}] run function magic:spells/runes/rune_of_the_windwalker/windwalker_off
+execute as @a[tag=shaman,scores={SpellUsed=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{speedrune:1b}}}] run function magic:spells/runes/rune_of_the_windwalker/windwalker_on
+
 
 ##Artefakt-Spells per Rechtsklick mit Fokus
 #Allgemein
@@ -29,6 +31,7 @@ execute as @a[scores={SpellUsed=1..},nbt={Inventory:[{Slot:-106b,id:"minecraft:c
 #Dämonisch
 #Heilig
 #Schamanisch
+execute as @a[tag=Speedrune] if entity @s[nbt={Inventory:[{id:"minecraft:carrot_on_a_stick",tag:{speedrune:1b}}]}] run effect give @s speed 5 1
 
 #Schamanisch
 
@@ -54,7 +57,7 @@ execute at @e[tag=sorcerer] as @e[type=item,nbt={Item:{id:"minecraft:carrot_on_a
 execute at @e[tag=sorcerer] as @e[type=item,nbt={Item:{id:"minecraft:carrot_on_a_stick",tag:{holyaltar:1b}}},distance=..3] at @s as @e[type=item,nbt={Item:{id:"minecraft:iron_nugget",tag:{holyrelict:1b},Count:4b}},distance=0..1,sort=nearest,limit=1] at @s as @e[type=item,nbt={Item:{id:"minecraft:iron_shovel"}},distance=0..1,sort=nearest,limit=1] at @s run function magic:crafting/divine_tools/crafting_divine_shovel
 execute at @e[tag=sorcerer] as @e[type=item,nbt={Item:{id:"minecraft:carrot_on_a_stick",tag:{holyaltar:1b}}},distance=..3] at @s as @e[type=item,nbt={Item:{id:"minecraft:iron_nugget",tag:{holyrelict:1b},Count:4b}},distance=0..1,sort=nearest,limit=1] at @s as @e[type=item,nbt={Item:{id:"minecraft:iron_hoe"}},distance=0..1,sort=nearest,limit=1] at @s run function magic:crafting/divine_tools/crafting_divine_hoe
 #LagerFeuer-Crafting
-execute at @a[tag=shaman] as @e[type=item,nbt={Item:{id:"minecraft:stone",Count:1b}}] at @s if entity @p[tag=shaman,distance=..4,scores={mana=8..}] if block ~ ~ ~ minecraft:campfire run function magic:crafting/crafting_blankrune
+execute at @a[tag=shaman] as @e[type=item,nbt={Item:{id:"minecraft:stone",Count:1b}}] at @s as @e[type=item,nbt={Item:{id:"minecraft:carrot_on_a_stick",tag:{chisel:1b},Count:1b}},distance=0..1,sort=nearest,limit=1] at @s if entity @p[tag=shaman,distance=..4,scores={mana=8..}] if block ~ ~ ~ minecraft:campfire run function magic:crafting/crafting_blankrune
 
 #Blöcke mit ArmourStands platzieren
 execute as @e[type=armor_stand,nbt={Tags:[bloodaltar]}] run function magic:blocks/blood_altar/spwn_bloodaltar
