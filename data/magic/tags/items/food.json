@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:apple",
+    "minecraft:mushroom_stew",
+    "minecraft:bread",
+    "minecraft:porkchop",
+    "minecraft:cod",
+    "minecraft:salmon",
+    "minecraft:cake",
+    "minecraft:cookie",
+    "minecraft:melon_slice",
+    "minecraft:beef",
+    "minecraft:chicken",
+    "minecraft:carrot",
+    "minecraft:potato",
+    "minecraft:pumpkin_pie",
+    "minecraft:rabbit",
+    "minecraft:rabbit_stew",
+    "minecraft:mutton",
+    "minecraft:beetroot_soup"
+  ]
+}

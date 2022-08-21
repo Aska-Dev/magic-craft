@@ -5,6 +5,8 @@ scoreboard objectives add SpellUsed minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add sacariumTimer dummy
 scoreboard objectives add SacariumHitTimer dummy
 scoreboard players set @a sacariumTimer 0
+scoreboard objectives add windwalkerTimer dummy
+scoreboard players set @a windwalkerTimer 0
 scoreboard objectives add playerSneak minecraft.custom:sneak_time
 scoreboard objectives add Soulstone dummy
 scoreboard objectives add tranceTimer dummy

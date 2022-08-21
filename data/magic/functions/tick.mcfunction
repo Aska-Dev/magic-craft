@@ -91,8 +91,13 @@ execute as @a[tag=inTrance,scores={tranceTimer=0}] run function magic:spells/sha
 scoreboard players remove @a[scores={sacariumTimer=1..}] sacariumTimer 1
 scoreboard players remove @e[scores={SacariumHitTimer=1..}] SacariumHitTimer 1
 scoreboard players remove @e[scores={tranceTimer=1..}] tranceTimer 1
+scoreboard players remove @e[scores={windwalkerTimer=1..}] windwalkerTimer 1
 
-#SacariumParamtere
+##Runes
+#WindwalkerCost
+execute as @a[tag=Speedrune,scores={windwalkerTimer=0}] run function magic:spells/runes/rune_of_the_windwalker/windwalker_cost
+
+#SacariumParameter
 execute as @a[tag=SacariumWielder,scores={sacariumTimer=..5}] at @s run tp @e[type=armor_stand,tag=sacarium,sort=nearest,limit=1] ^-0.3 ^ ^-0.5 facing ^ ^ ^10
 execute at @e[tag=sacarium_h] run particle minecraft:soul_fire_flame ~ ~0.6 ~ 0.3 0.4 0.3 0.04 1 force
 execute at @e[tag=sacarium_h] as @a[tag=SacariumSentry,distance=20..] run function magic:spells/sacarium/sacarium_sentry_return
